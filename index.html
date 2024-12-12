@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddhist Focus - Daily Teachings</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4">
+                            <span class="font-semibold text-gray-800 text-lg">Buddhist Focus</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Daily Teaching</h2>
+                <div id="daily-teaching" class="text-gray-600 text-lg italic mb-4"></div>
+                <div id="teaching-source" class="text-gray-500 text-sm"></div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Daily Practice Suggestion</h2>
+                <div id="daily-practice" class="text-gray-600"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // We'll load these from our JSON file
+        const teachings = [
+            {
+                quote: "Peace comes from within. Do not seek it without.",
+                source: "Buddha",
+                practice: "Take 5 minutes today to sit in silence and observe your breath."
+            }
+        ];
+
+        function updateDailyTeaching() {
+            const today = new Date();
+            const index = today.getDate() % teachings.length;
+            const teaching = teachings[index];
+
+            document.getElementById('daily-teaching').textContent = teaching.quote;
+            document.getElementById('teaching-source').textContent = `- ${teaching.source}`;
+            document.getElementById('daily-practice').textContent = teaching.practice;
+        }
+
+        updateDailyTeaching();
+    </script>
+</body>
+</html>
