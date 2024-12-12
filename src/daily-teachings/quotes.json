@@ -21,19 +21,14 @@
       "practice": "When anger arises today, pause and take three deep breaths before responding."
     },
     {
-      "quote": "Holding onto anger is like drinking poison and expecting the other person to die.",
-      "source": "Buddhist Proverb",
-      "practice": "Practice letting go of a small grudge or frustration today."
-    },
-    {
-      "quote": "If you light a lamp for someone else, it will also brighten your path.",
+      "quote": "In the end, only three things matter: how much you loved, how gently you lived, and how gracefully you let go of things not meant for you.",
       "source": "Buddha",
-      "practice": "Perform one act of kindness today without expecting anything in return."
+      "practice": "Reflect on what you can let go of today that no longer serves you."
     },
     {
-      "quote": "The trouble is, you think you have time.",
-      "source": "Buddhist Saying",
-      "practice": "Focus on being present in each moment today, especially during routine activities."
+      "quote": "Every morning we are born again. What we do today matters most.",
+      "source": "Buddha",
+      "practice": "Start your day with intention by setting three mindful goals."
     }
   ],
   "categories": {
@@ -47,6 +42,16 @@
         "quote": "Nothing can harm you as much as your own thoughts unguarded.",
         "source": "Buddha",
         "practice": "Set three mindfulness bells today to pause and check in with your thoughts."
+      },
+      {
+        "quote": "When walking, walk. When eating, eat.",
+        "source": "Zen Proverb",
+        "practice": "Choose one routine activity today and do it with complete attention."
+      },
+      {
+        "quote": "Awareness is like the sun. When it shines on things, they are transformed.",
+        "source": "Thich Nhat Hanh",
+        "practice": "Bring mindful awareness to a challenging situation today."
       }
     ],
     "compassion": [
@@ -56,9 +61,107 @@
         "practice": "Send loving-kindness to someone you find difficult today."
       },
       {
-        "quote": "Be where you are; otherwise you will miss your life.",
+        "quote": "If you light a lamp for someone else, it will also brighten your path.",
         "source": "Buddha",
-        "practice": "Practice active listening in your conversations today."
+        "practice": "Perform three random acts of kindness today."
+      },
+      {
+        "quote": "Love and compassion are necessities, not luxuries. Without them, humanity cannot survive.",
+        "source": "Dalai Lama",
+        "practice": "Practice self-compassion when you make a mistake today."
+      },
+      {
+        "quote": "Be kind whenever possible. It is always possible.",
+        "source": "Dalai Lama",
+        "practice": "Notice opportunities for kindness throughout your day."
+      }
+    ],
+    "wisdom": [
+      {
+        "quote": "The root of suffering is attachment.",
+        "source": "Buddha",
+        "practice": "Observe where you feel attachment today and practice letting go."
+      },
+      {
+        "quote": "What you are is what you have been. What you'll be is what you do now.",
+        "source": "Buddha",
+        "practice": "Reflect on how your current actions shape your future self."
+      },
+      {
+        "quote": "Pain is inevitable. Suffering is optional.",
+        "source": "Buddhist Teaching",
+        "practice": "Notice the difference between pain and your reaction to it."
+      },
+      {
+        "quote": "Your work is to discover your work and then with all your heart to give yourself to it.",
+        "source": "Buddha",
+        "practice": "Reflect on your life's purpose and take one step toward it."
+      }
+    ],
+    "meditation": [
+      {
+        "quote": "Meditation brings wisdom; lack of meditation leaves ignorance.",
+        "source": "Buddha",
+        "practice": "Set aside 10 minutes for silent meditation today."
+      },
+      {
+        "quote": "Just as a candle cannot burn without fire, men cannot live without a spiritual life.",
+        "source": "Buddha",
+        "practice": "Practice walking meditation for 5 minutes today."
+      },
+      {
+        "quote": "Silence is the language of god, all else is poor translation.",
+        "source": "Rumi",
+        "practice": "Find a quiet space and practice noble silence for 15 minutes."
+      },
+      {
+        "quote": "Quiet the mind, and the soul will speak.",
+        "source": "Ma Jaya Sati Bhagavati",
+        "practice": "Practice breath awareness throughout the day."
+      }
+    ],
+    "impermanence": [
+      {
+        "quote": "Everything that has a beginning has an ending. Make your peace with that and all will be well.",
+        "source": "Buddhist Teaching",
+        "practice": "Observe the changing nature of your thoughts and emotions today."
+      },
+      {
+        "quote": "Like a river, life flows continuously, never staying the same.",
+        "source": "Buddhist Teaching",
+        "practice": "Notice three things that have changed in your life recently."
+      },
+      {
+        "quote": "All conditioned things are impermanent.",
+        "source": "Buddha",
+        "practice": "Reflect on the temporary nature of a current situation."
+      },
+      {
+        "quote": "This too shall pass.",
+        "source": "Buddhist Teaching",
+        "practice": "Remember this phrase during both pleasant and unpleasant experiences today."
+      }
+    ],
+    "noble_eightfold_path": [
+      {
+        "quote": "The Noble Eightfold Path is the way to the end of suffering.",
+        "source": "Buddha",
+        "practice": "Focus on Right Speech today in all your communications."
+      },
+      {
+        "quote": "Right View leads to Right Intention, Right Intention leads to Right Action.",
+        "source": "Buddhist Teaching",
+        "practice": "Examine your intentions before taking important actions today."
+      },
+      {
+        "quote": "Right Livelihood means earning one's living in an ethical way.",
+        "source": "Buddhist Teaching",
+        "practice": "Reflect on how your work contributes to the wellbeing of others."
+      },
+      {
+        "quote": "Right Mindfulness means being aware and mindful of things, mind and mental qualities.",
+        "source": "Buddhist Teaching",
+        "practice": "Practice mindfulness during your daily activities."
       }
     ]
   }
