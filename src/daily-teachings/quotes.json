@@ -162,6 +162,219 @@
         "quote": "Right Mindfulness means being aware and mindful of things, mind and mental qualities.",
         "source": "Buddhist Teaching",
         "practice": "Practice mindfulness during your daily activities."
+    "four_noble_truths": [
+      {
+        "quote": "Life contains suffering (dukkha)",
+        "source": "First Noble Truth",
+        "practice": "Notice moments of dissatisfaction today, both subtle and obvious."
+      },
+      {
+        "quote": "The origin of suffering is craving (samudaya)",
+        "source": "Second Noble Truth",
+        "practice": "Observe when desire or aversion arises and how it affects your peace of mind."
+      },
+      {
+        "quote": "The cessation of suffering is possible (nirodha)",
+        "source": "Third Noble Truth",
+        "practice": "Notice moments of peace when letting go of wants and aversions."
+      },
+      {
+        "quote": "The path to the cessation of suffering is the Noble Eightfold Path (magga)",
+        "source": "Fourth Noble Truth",
+        "practice": "Choose one aspect of the Eightfold Path to focus on today."
+      }
+    ],
+    "five_aggregates": [
+      {
+        "quote": "Form (rupa) - the physical world and body",
+        "source": "Buddhist Teaching",
+        "practice": "Observe your body's sensations without attachment."
+      },
+      {
+        "quote": "Sensation/Feeling (vedana) - the basic feeling tone of experience",
+        "source": "Buddhist Teaching",
+        "practice": "Notice if sensations are pleasant, unpleasant, or neutral."
+      },
+      {
+        "quote": "Perception (sanna) - recognition and labeling",
+        "source": "Buddhist Teaching",
+        "practice": "Watch how your mind labels and categorizes experiences."
+      },
+      {
+        "quote": "Mental formations (sankhara) - thoughts, emotions, and intentions",
+        "source": "Buddhist Teaching",
+        "practice": "Observe how thoughts and emotions arise and pass."
+      },
+      {
+        "quote": "Consciousness (vinnana) - awareness of sense objects and mental objects",
+        "source": "Buddhist Teaching",
+        "practice": "Notice the knowing quality of awareness itself."
+      }
+    ],
+    "three_marks_existence": [
+      {
+        "quote": "All conditioned things are impermanent (anicca)",
+        "source": "Buddhist Teaching",
+        "practice": "Notice the changing nature of your experience throughout the day."
+      },
+      {
+        "quote": "All conditioned things involve suffering (dukkha)",
+        "source": "Buddhist Teaching",
+        "practice": "Observe how attachment to impermanent things causes stress."
+      },
+      {
+        "quote": "All phenomena are without self (anatta)",
+        "source": "Buddhist Teaching",
+        "practice": "Look for what you consider 'self' and investigate its nature."
+      }
+    ],
+    "six_paramitas": [
+      {
+        "quote": "Generosity (dana) - giving of oneself",
+        "source": "Mahayana Teaching",
+        "practice": "Practice giving without expectation of return."
+      },
+      {
+        "quote": "Ethical conduct (sila) - living ethically",
+        "source": "Mahayana Teaching",
+        "practice": "Review your actions through the lens of the Five Precepts."
+      },
+      {
+        "quote": "Patience (ksanti) - accepting hardship",
+        "source": "Mahayana Teaching",
+        "practice": "Practice patience in challenging situations."
+      },
+      {
+        "quote": "Diligence (virya) - joyful effort",
+        "source": "Mahayana Teaching",
+        "practice": "Maintain steady effort in your practice without strain."
+      },
+      {
+        "quote": "Concentration (dhyana) - meditation",
+        "source": "Mahayana Teaching",
+        "practice": "Develop one-pointed concentration in meditation."
+      },
+      {
+        "quote": "Wisdom (prajna) - seeing true nature",
+        "source": "Mahayana Teaching",
+        "practice": "Investigate the nature of your experience deeply."
+      }
+    ],
+    "four_brahmaviharas": [
+      {
+        "quote": "Loving-kindness (metta) - boundless goodwill",
+        "source": "Buddhist Teaching",
+        "practice": "Send loving-kindness to yourself, loved ones, neutrals, and difficult people."
+      },
+      {
+        "quote": "Compassion (karuna) - wish to relieve suffering",
+        "source": "Buddhist Teaching",
+        "practice": "Notice suffering in others and wish for its relief."
+      },
+      {
+        "quote": "Sympathetic joy (mudita) - joy in others' happiness",
+        "source": "Buddhist Teaching",
+        "practice": "Celebrate others' successes and happiness."
+      },
+      {
+        "quote": "Equanimity (upekkha) - even-mindedness",
+        "source": "Buddhist Teaching",
+        "practice": "Maintain balance amid life's ups and downs."
+      }
+    ],
+    "dependent_origination": [
+      {
+        "quote": "When this exists, that comes to be. When this ceases, that ceases.",
+        "source": "Buddha",
+        "practice": "Notice the chain of causes and conditions in your experience."
+      },
+      {
+        "quote": "From ignorance as a requisite condition come fabrications.",
+        "source": "Buddhist Teaching",
+        "practice": "Observe how misunderstanding leads to mental formations."
+      },
+      {
+        "quote": "With the cessation of ignorance comes the cessation of suffering.",
+        "source": "Buddhist Teaching",
+        "practice": "Notice moments of clear seeing and their effect on suffering."
+      }
+    ],
+    "middle_way": [
+      {
+        "quote": "Avoid the extremes of self-indulgence and self-denial.",
+        "source": "Buddha",
+        "practice": "Find balance in your practice and daily life."
+      },
+      {
+        "quote": "Neither existence nor non-existence",
+        "source": "Buddhist Teaching",
+        "practice": "Notice when you're caught in extreme views."
+      },
+      {
+        "quote": "The Middle Way leads to insight, knowledge, peace.",
+        "source": "Buddha",
+        "practice": "Practice moderation in all things today."
+      }
+    ],
+    "karma": [
+      {
+        "quote": "Whatever I do, for good or evil, to that I will fall heir.",
+        "source": "Buddha",
+        "practice": "Notice the immediate effects of your actions on your mind."
+      },
+      {
+        "quote": "Intention, I tell you, is karma. Intending, one does karma through body, speech, and intellect.",
+        "source": "Buddha",
+        "practice": "Pay attention to the intentions behind your actions."
+      },
+      {
+        "quote": "As you sow, so shall you reap.",
+        "source": "Buddhist Teaching",
+        "practice": "Consider how your current actions shape future experiences."
+      }
+    ],
+    "emptiness": [
+      {
+        "quote": "Form is emptiness, emptiness is form.",
+        "source": "Heart Sutra",
+        "practice": "Investigate the insubstantial nature of phenomena."
+      },
+      {
+        "quote": "All phenomena are empty of inherent existence.",
+        "source": "Nagarjuna",
+        "practice": "Look for the independent existence of any phenomenon."
+      },
+      {
+        "quote": "Like a magic show, like a dream.",
+        "source": "Buddhist Teaching",
+        "practice": "Notice the dreamlike quality of experience."
+      }
+    ],
+    "precepts": [
+      {
+        "quote": "Abstain from killing - practice reverence for life",
+        "source": "First Precept",
+        "practice": "Practice kindness toward all living beings."
+      },
+      {
+        "quote": "Abstain from stealing - practice generosity",
+        "source": "Second Precept",
+        "practice": "Notice opportunities to practice giving."
+      },
+      {
+        "quote": "Abstain from sexual misconduct - practice respect",
+        "source": "Third Precept",
+        "practice": "Cultivate respectful relationships."
+      },
+      {
+        "quote": "Abstain from false speech - practice truthfulness",
+        "source": "Fourth Precept",
+        "practice": "Speak honestly and kindly."
+      },
+      {
+        "quote": "Abstain from intoxicants - practice clarity",
+        "source": "Fifth Precept",
+        "practice": "Maintain mindfulness throughout the day."
       }
     ]
   }
