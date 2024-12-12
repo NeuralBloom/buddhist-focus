@@ -1,0 +1,65 @@
+{
+  "teachings": [
+    {
+      "quote": "Peace comes from within. Do not seek it without.",
+      "source": "Buddha",
+      "practice": "Take 5 minutes today to sit in silence and observe your breath."
+    },
+    {
+      "quote": "Three things cannot be long hidden: the sun, the moon, and the truth.",
+      "source": "Buddha",
+      "practice": "Practice honesty today by being truthful in all your communications."
+    },
+    {
+      "quote": "The mind is everything. What you think you become.",
+      "source": "Buddha",
+      "practice": "Notice your thought patterns today. When negative thoughts arise, acknowledge them without judgment."
+    },
+    {
+      "quote": "You will not be punished for your anger; you will be punished by your anger.",
+      "source": "Buddha",
+      "practice": "When anger arises today, pause and take three deep breaths before responding."
+    },
+    {
+      "quote": "Holding onto anger is like drinking poison and expecting the other person to die.",
+      "source": "Buddhist Proverb",
+      "practice": "Practice letting go of a small grudge or frustration today."
+    },
+    {
+      "quote": "If you light a lamp for someone else, it will also brighten your path.",
+      "source": "Buddha",
+      "practice": "Perform one act of kindness today without expecting anything in return."
+    },
+    {
+      "quote": "The trouble is, you think you have time.",
+      "source": "Buddhist Saying",
+      "practice": "Focus on being present in each moment today, especially during routine activities."
+    }
+  ],
+  "categories": {
+    "mindfulness": [
+      {
+        "quote": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
+        "source": "Buddha",
+        "practice": "During meals today, focus entirely on the experience of eating."
+      },
+      {
+        "quote": "Nothing can harm you as much as your own thoughts unguarded.",
+        "source": "Buddha",
+        "practice": "Set three mindfulness bells today to pause and check in with your thoughts."
+      }
+    ],
+    "compassion": [
+      {
+        "quote": "Hatred does not cease by hatred, but only by love; this is the eternal rule.",
+        "source": "Buddha",
+        "practice": "Send loving-kindness to someone you find difficult today."
+      },
+      {
+        "quote": "Be where you are; otherwise you will miss your life.",
+        "source": "Buddha",
+        "practice": "Practice active listening in your conversations today."
+      }
+    ]
+  }
+}
