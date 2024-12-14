@@ -1,1 +1,80 @@
+/* Additional custom styles beyond Tailwind */
 
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Meditation Timer Styles */
+.meditation-timer {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Practice Card Hover Effects */
+.practice-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.practice-card:hover {
+    transform: translateY(-2px);
+}
+
+/* List Styles */
+.practice-list {
+    margin-left: 1.5rem;
+}
+
+.practice-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    backdrop-filter: blur(2px);
+}
+
+/* Custom Button States */
+.btn-success {
+    background-color: #10B981;
+}
+
+.btn-success:hover {
+    background-color: #059669;
+}
+
+/* Explanation Text */
+.explanation-text {
+    font-style: italic;
+    color: #4B5563;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #E5E7EB;
+}
+
+/* Method Steps */
+.method-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.method-step strong {
+    min-width: 2rem;
+    margin-right: 0.5rem;
+}
+
+/* Category Tags */
+.category-tag {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 500;
+}
