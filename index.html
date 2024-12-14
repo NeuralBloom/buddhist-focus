@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buddhist Focus - Daily Teachings</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50">
     <nav class="bg-white shadow-lg">
@@ -20,13 +21,14 @@
                 <div class="flex items-center space-x-4">
                     <button id="category-btn" class="px-4 py-2 text-gray-700 rounded hover:bg-gray-100">Categories</button>
                     <button id="random-btn" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Random Teaching</button>
+                    <button id="meditation-btn" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Meditate</button>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Category Modal -->
-    <div id="category-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div id="category-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
             <h3 class="text-xl font-bold mb-4">Choose Category</h3>
             <div class="space-y-2" id="category-list">
@@ -36,8 +38,25 @@
         </div>
     </div>
 
+    <!-- Meditation Timer Modal -->
+    <div id="meditation-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <h3 class="text-xl font-bold mb-4">Meditation Timer</h3>
+            <div class="mb-4">
+                <label class="block text-gray-700 mb-2">Duration (minutes)</label>
+                <input type="number" id="meditation-duration" class="w-full p-2 border rounded" value="10">
+            </div>
+            <div id="meditation-timer" class="text-4xl text-center mb-4 hidden">00:00</div>
+            <div class="flex space-x-2">
+                <button id="start-meditation" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Start</button>
+                <button onclick="closeMeditationModal()" class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Cancel</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container mx-auto px-4 py-8">
         <div class="max-w-2xl mx-auto">
+            <!-- Teaching Card -->
             <div class="bg-white rounded-lg shadow-md p-6 mb-6">
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="text-2xl font-bold text-gray-800">Daily Teaching</h2>
@@ -48,9 +67,24 @@
                 <div class="border-t pt-4">
                     <h3 class="font-bold text-gray-700 mb-2">Practice Suggestion</h3>
                     <div id="daily-practice" class="text-gray-600"></div>
+                    <!-- Additional content sections -->
+                    <div id="teaching-explanation" class="mt-4 text-gray-600 hidden"></div>
+                    <div id="teaching-tips" class="mt-4 hidden">
+                        <strong class="text-gray-700">Tips:</strong>
+                        <ul class="list-disc list-inside ml-4 mt-2"></ul>
+                    </div>
+                    <div id="teaching-instructions" class="mt-4 hidden">
+                        <strong class="text-gray-700">Instructions:</strong>
+                        <ol class="list-decimal list-inside ml-4 mt-2"></ol>
+                    </div>
+                    <div id="teaching-method" class="mt-4 hidden">
+                        <strong class="text-gray-700">Method:</strong>
+                        <div class="ml-4 mt-2"></div>
+                    </div>
                 </div>
             </div>
 
+            <!-- Reflection Card -->
             <div class="bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-bold mb-4 text-gray-800">Personal Reflection</h2>
                 <textarea id="reflection" class="w-full p-2 border rounded-lg mb-2" rows="4" placeholder="Write your thoughts on today's teaching..."></textarea>
@@ -59,80 +93,8 @@
         </div>
     </div>
 
-    <script>
-        let currentTeachings = null;
-        let currentCategory = 'all';
-
-        async function loadTeachings() {
-            const response = await fetch('src/daily-teachings/quotes.json');
-            currentTeachings = await response.json();
-            updateCategoryList();
-            updateDailyTeaching();
-        }
-
-        function updateCategoryList() {
-            const categoryList = document.getElementById('category-list');
-            categoryList.innerHTML = '<button class="w-full text-left px-4 py-2 hover:bg-gray-100 rounded" onclick="selectCategory(\'all\')">All Teachings</button>';
-            
-            for (const category in currentTeachings.categories) {
-                categoryList.innerHTML += `
-                    <button class="w-full text-left px-4 py-2 hover:bg-gray-100 rounded" 
-                            onclick="selectCategory('${category}')">
-                        ${category.charAt(0).toUpperCase() + category.slice(1)}
-                    </button>`;
-            }
-        }
-
-        function selectCategory(category) {
-            currentCategory = category;
-            updateDailyTeaching();
-            closeModal();
-        }
-
-        function getRandomTeaching() {
-            let teachings;
-            if (currentCategory === 'all') {
-                teachings = currentTeachings.teachings;
-            } else {
-                teachings = currentTeachings.categories[currentCategory];
-            }
-            return teachings[Math.floor(Math.random() * teachings.length)];
-        }
-
-        function updateDailyTeaching() {
-            const teaching = getRandomTeaching();
-            document.getElementById('daily-teaching').textContent = teaching.quote;
-            document.getElementById('teaching-source').textContent = `- ${teaching.source}`;
-            document.getElementById('daily-practice').textContent = teaching.practice;
-            document.getElementById('category-tag').textContent = currentCategory === 'all' ? 'General' : currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1);
-        }
-
-        function openModal() {
-            document.getElementById('category-modal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('category-modal').classList.add('hidden');
-        }
-
-        function saveReflection() {
-            const reflection = document.getElementById('reflection').value;
-            if (reflection) {
-                const date = new Date().toLocaleDateString();
-                const reflections = JSON.parse(localStorage.getItem('reflections') || '{}');
-                reflections[date] = reflection;
-                localStorage.setItem('reflections', JSON.stringify(reflections));
-                document.getElementById('reflection').value = '';
-                alert('Reflection saved!');
-            }
-        }
-
-        // Event Listeners
-        document.getElementById('category-btn').addEventListener('click', openModal);
-        document.getElementById('random-btn').addEventListener('click', updateDailyTeaching);
-
-        // Initialize
-        loadTeachings();
-    </script>
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/meditation.js"></script>
 </body>
 </html>
