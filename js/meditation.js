@@ -56,16 +56,12 @@ class MeditationTimer {
         this.updateButtonStates();
     }
 
-    playEndBell() {
-        this.bellSound.play();
-    }
-
     tick() {
         if (this.remaining > 0) {
             this.remaining--;
             this.updateDisplay();
         } else {
-            this.playEndBell();
+            this.bellSound.play();
             this.stop();
         }
     }
@@ -83,29 +79,31 @@ class MeditationTimer {
         const startButton = document.getElementById('start-meditation');
         const pauseButton = document.getElementById('pause-meditation');
         const restartButton = document.getElementById('restart-meditation');
-        
+
+        // Show/hide start and pause buttons
         if (this.isRunning) {
             startButton.classList.add('hidden');
             pauseButton.classList.remove('hidden');
         } else {
-            startButton.classList.remove('hidden');
             pauseButton.classList.add('hidden');
+            startButton.classList.remove('hidden');
         }
-        
+
+        // Update start button text and show/hide restart button
         if (this.isPaused) {
             startButton.textContent = 'Resume';
             restartButton.classList.remove('hidden');
         } else {
             startButton.textContent = 'Start';
-            if (!this.isRunning) {
-                restartButton.classList.add('hidden');
-            }
+            restartButton.classList.add('hidden');
         }
     }
 }
 
+// Initialize timer
 const meditationTimer = new MeditationTimer();
 
+// Event handlers
 function openMeditationModal() {
     document.getElementById('meditation-modal').classList.remove('hidden');
     document.getElementById('meditation-timer').classList.remove('hidden');
