@@ -18,7 +18,6 @@ class MeditationTimer {
         if (!this.isRunning && this.remaining > 0) {
             this.isRunning = true;
             this.isPaused = false;
-            this.playStartBell();
             this.timer = setInterval(() => this.tick(), 1000);
             this.updateButtonStates();
         }
@@ -55,12 +54,6 @@ class MeditationTimer {
         this.remaining = this.duration;
         this.updateDisplay();
         this.updateButtonStates();
-    }
-
-    playStartBell() {
-        setTimeout(() => {
-            this.bellSound.play();
-        }, 500);
     }
 
     playEndBell() {
